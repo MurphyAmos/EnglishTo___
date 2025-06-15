@@ -16,7 +16,7 @@ EnglishTo___ uses sphinx to pull audio input to return a string. When then use g
 - `pip3 install -U sphinx`
 ## How It Works
 
-This script takes a word and returns the translated word using the `translate` module.
+This script takes a word and returns the translated word using the `deep_translator` module.
 
 Example:
 
