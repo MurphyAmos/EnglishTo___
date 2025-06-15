@@ -20,13 +20,13 @@ This script takes a word and returns the translated word using the `translate` m
 
 Example:
 
--`$ python3 translateString.py `
+- `$ python3 translateString.py `
 
--`Translate: Hello`
+- `Translate: Hello`
 
--`Enter the language to translate to: Spanish`
+- `Enter the language to translate to: Spanish`
 
--`Translated: hola`
+- `Translated: hola`
 
 ### Usage
 - When ran the program will prompt the user to say something in English
