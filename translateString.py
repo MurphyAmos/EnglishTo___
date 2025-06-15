@@ -18,26 +18,34 @@ class multiWordTranslate:
                 if x == Language:
                     lanDictIndex = langDict[Language]               
                     return lanDictIndex
+        #making a string of what was said 
         global stringOfVoice
+        #creating voice holder on the mic, taking that an putting it into a audioholder... then turning audio into text and holding it into the stringOfVoice 
         UserVoiceHolder= sr.Recognizer()
         with sr.Microphone() as source:
             audioHolder = UserVoiceHolder.listen(source)
             try:
+                ##tryging to put the audio into the string if there is some 
                 stringOfVoice = UserVoiceHolder.recognize_sphinx(audioHolder)
             except UserVoiceHolder.UnknownValueError:
+                #if not say so
                 print("No input received")
             finally:
+                #if there is a string at the end return the string!
                 if bool(stringOfVoice) != None:
                     print("Translate: " , stringOfVoice)
                     findLanguage()
                     return stringOfVoice
                 else:
                     print("No input Was Found")
-
+    
     def returnTranslateString(string):
-        global translatedString        
+        #translated string holder
+        global translatedString       
+        #use googlesTramlater to translate my Userpicked language and return the string
         translatedString = GoogleTranslator(source='auto',target = lanDictIndex).translate(string)
         print(f"Translated to {Language.title()}: {translatedString}")
         return translatedString
 
+    #run Return and use the output of multiwordString as the input of it
     returnTranslateString(listen())
