@@ -1,15 +1,15 @@
 ######################################################
-#		    	 KEY 			                     #
-#	                                                 #
-#	#### = Start or End of Function 	             #
-#	                                                 #
-#	# = notes and simple comments  	                 #
-# 						                             #
-#	### = Explanation of function processes          #
+#		    	 KEY 			     #
+#	                                             #
+#	#### = Start or End of Function 	     #
+#	                                             #
+#	# = notes and simple comments  	             #
+# 						     #
+#	### = Explanation of function processes      #
 #                                                    #
-#	######### = End of Functions in Class	         #
-#						                             #
-#	##### = section identifier 		                 #
+#	######### = End of Functions in Class	     #
+#						     #
+#	##### = section identifier 		     #
 #                                                    #
 #                                                 -MA#
 ######################################################
