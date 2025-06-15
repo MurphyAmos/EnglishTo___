@@ -12,15 +12,18 @@ EnglishTo___ uses sphinx to pull audio input to return a string. When then use g
 ### Prerequisites
 - `Python 3.9.13`
 - Proper Internet Connection
+- `pip3 install -U deep-translator`
+- `pip3 install -U sphinx`
+- 
 ## How It Works
 
 This script takes a word and returns the translated word using the `translate` module.
 
 Example:
 
--`$ python3 `
+-`$ python3 translateString.py `
 
--``
+-`Translate: Hello`
 
 -`Enter the language to translate to: Spanish`
 
