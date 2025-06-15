@@ -5,12 +5,17 @@ from deep_translator import GoogleTranslator
 class multiWordTranslate:
     def listen():
         def findLanguage():
+            #making global variables to access language variables 
             global lanDictIndex    
             global Language
             global lanDictIndex            
+            #get language to translate to 
             Language = input("Translate To: ").lower()
+            #language dict to look through for translation
             langDict = {"english":"en", "hindi":"hi", "spanish":"es", "dutch":"de", "french": "fr", "russian":"ru", "polish":"pl", "chinese":"zh"}
+            #for loop to look through the langDict for language
             for x in langDict:
+                #while we look through if index match language landictIndex  = langDict[of full language name to return dict value]
                 if x == Language:
                     lanDictIndex = langDict[Language]               
                     return lanDictIndex
